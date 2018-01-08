@@ -1,0 +1,15 @@
+cloud:
+  aws:
+    region: us-west-2
+    credentials:
+      accessKey: AKIAJWLKDWMLUB6TNCFQ
+      secretKey: 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
+    s3:
+      bucketName: dev-template-images
+    endpointUrl: https://s3.us-west-2.amazonaws.com         
+multipart:
+  maxFileSize: -1
+  maxRequestSize: 1024Mb
+  
+
+  

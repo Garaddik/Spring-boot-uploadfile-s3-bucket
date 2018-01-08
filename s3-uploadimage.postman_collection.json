@@ -1,0 +1,78 @@
+{
+	"id": "4ebd813d-b52c-14fc-8435-00da2e22bf7a",
+	"name": "s3-uploadimage",
+	"description": "",
+	"order": [
+		"8b09d74c-d9af-ef23-271b-e35c40ff1f73",
+		"4d4b4d9e-ce2f-8585-3634-ab44fd057bea"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1515422875909,
+	"owner": "3426983",
+	"public": false,
+	"requests": [
+		{
+			"id": "4d4b4d9e-ce2f-8585-3634-ab44fd057bea",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/schools/1/images/upload",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4ebd813d-b52c-14fc-8435-00da2e22bf7a",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "localhost:8080/schools/1/images/upload",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515422892444,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8b09d74c-d9af-ef23-271b-e35c40ff1f73",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/s3/upload",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "4ebd813d-b52c-14fc-8435-00da2e22bf7a",
+			"data": [
+				{
+					"key": "url",
+					"value": "https://s3.us-west-2.amazonaws.com/dev-template-images/1515422718761-basic.png",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "localhost:8080/s3/upload",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515422877350,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
